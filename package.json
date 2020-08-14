@@ -1,0 +1,33 @@
+{
+  "name": "ss-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "next": "9.5.2",
+    "postcss-import": "^12.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScaleSoftcl/ss-website.git"
+  },
+  "author": "Jaime Bustos Espinoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScaleSoftcl/ss-website/issues"
+  },
+  "homepage": "https://github.com/ScaleSoftcl/ss-website#readme"
+}
