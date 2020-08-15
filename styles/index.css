@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Quicksand:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-blue-500 p-12;
+  @apply bg-white min-h-screen m-0;
 }
