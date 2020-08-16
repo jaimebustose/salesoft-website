@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 
 export default function Header() {
@@ -62,18 +61,6 @@ export default function Header() {
           Contacto
         </a>
       </div>
-=======
-import React from "react";
-
-export default function Header() {
-  return (
-    <header className="min-h-screen">
-      <nav className="flex flex-row">
-        <h1 className="font-quick text-5xl text-white">
-          <span className="text-primary-600">Scale</span>Soft
-        </h1>
-      </nav>
->>>>>>> de112e5d3ef65b87c6408e225865c1cc8c6706ed
     </header>
   );
 }
