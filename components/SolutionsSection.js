@@ -7,25 +7,25 @@ export default function SolutionsSection() {
     {
       nombreSolucion: 'Sitio Web básico',
       descripcion: 'Funciones básicas, landing page e información relevante a tu negocio y/o empresa, todo esto en tu espacio personal.',
-      action: console.log('Solicitar'),
+      action: () => console.log('Solicitar'),
       solutionAnmiation: ''
     },
     {
       nombreSolucion: 'Sitio de reserva de horas',
       descripcion: 'Automatiza la solicitud de horas de tu negocio permitiendo así, evitar retrasos y preocupandote únicamente de realizar ventas.',
-      action: console.log('Solicitar'),
+      action: () => console.log('Solicitar'),
       solutionAnmiation: ''
     },
     {
       nombreSolucion: 'Sitio E-commerce Premium',
       descripcion: 'Todos tus productos en un espacio personalizado e ideado para maximizar al máximo tus ventas.',
-      action: console.log('Solicitar'),
+      action: () => console.log('Solicitar'),
       solutionAnmiation: ''
     },
     {
       nombreSolucion: 'Aplicación Web Delivery',
       descripcion: 'Amplia tus canales de venta y monitorea tus envíos de manera de automatizada, fidelizando clientes y maximizando ganancias.',
-      action: console.log('Solicitar'),
+      action: () => console.log('Solicitar'),
       solutionAnmiation: ''
     }
   ]

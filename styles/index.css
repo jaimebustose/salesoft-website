@@ -6,9 +6,12 @@ body {
   @apply bg-white min-h-screen m-0;
 }
 
-
 @tailwind components;
 /* purgecss end ignore */
+
+.ss-price-flex {
+  min-height: calc(100vh - 256px);
+}
 
 .ss-about {
   background-image: url('../public/res/animation-end.svg');

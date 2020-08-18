@@ -58,8 +58,7 @@ export default function PriceSection() {
         Precios
       </h2>
       <div
-        className='flex flex-col w-5/6 sm:my-32 mx-auto sm:bg-white sm:border-t-4 rounded sm:border-primary-600'
-        style={{ minHeight: 'calc(100vh - 256px)' }}
+        className='ss-price-flex flex flex-col w-5/6 sm:my-32 mx-auto sm:bg-white sm:border-t-4 rounded sm:border-primary-600'
       >
         <h2 className='hidden sm:block mx-auto py-8 font-poppins font-medium text-2xl sm:text-4xl text-neutral-700'>
           Precios
