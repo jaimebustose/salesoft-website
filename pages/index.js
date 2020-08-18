@@ -40,6 +40,7 @@ const index = () => (
         name='google-site-verification'
         content='U0EhuDu7Jt2UA0BlFR59HAwOryFUzs6cs1iwYVVQbfk'
       />
+      <meta name="facebook-domain-verification" content="84a7aed918drnjbrzf4p1oclk6lllz" />
     </Head>
     <FirstSection />
     <AboutSection />
