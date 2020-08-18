@@ -3,12 +3,14 @@ import FirstSection from '../components/FirstSection';
 import AboutSection from '../components/AboutSection';
 import SolutionsSection from '../components/SolutionsSection';
 import PriceSection from '../components/PriceSection';
-import FacebookPixel from '../components/pixel/pixel-1';
+import FacebookPixel from '../components/pixel/pixel';
+import GoogleAnalytics from '../components/analytics/gtag';
 
 const index = () => (
   <div>
     <Head>
       <FacebookPixel />
+      <GoogleAnalytics />
       <title>ScaleSoft</title>
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta
@@ -40,7 +42,10 @@ const index = () => (
         name='google-site-verification'
         content='U0EhuDu7Jt2UA0BlFR59HAwOryFUzs6cs1iwYVVQbfk'
       />
-      <meta name="facebook-domain-verification" content="84a7aed918drnjbrzf4p1oclk6lllz" />
+      <meta
+        name='facebook-domain-verification'
+        content='84a7aed918drnjbrzf4p1oclk6lllz'
+      />
     </Head>
     <FirstSection />
     <AboutSection />
