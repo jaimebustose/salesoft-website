@@ -1,20 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Header({ isOpen, onHandleIsOpen }) {
   return (
-    <header className="text-white sm:flex select-none">
+    <header
+      className={`${
+        isOpen && 'bg-neutralv-900'
+      } text-white md:flex select-none md:bg-primary-900`}
+    >
       <div className='flex items-center justify-between px-4 lg:pl-8 py-4'>
         <div>
-          <h1 className='font-quick text-2xl md:text-4xl sm:opacity-75 sm:hover:opacity-100 duration-200 cursor-pointer'>
+          <h1 className='font-quick text-2xl md:text-4xl duration-200 cursor-pointer'>
             <span className='text-primary-600'>Scale</span>Soft
           </h1>
         </div>
-        <div className="sm:hidden">
+        <div className='md:hidden'>
           <button
             type='button'
             className='block text-gray-500 hover:text-white focus:text-white focus:outline-none'
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => onHandleIsOpen()}
           >
             <svg className='h-6 w-6 fill-current' viewBox='0 0 24 24'>
               <path
@@ -29,7 +32,11 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <div className={`${isOpen ? 'block' : 'hidden'} px-2 pb-4 sm:p-0 sm:ml-auto sm:pr-1 lg:pr-6 font-open sm:flex sm:items-center`}>
+      <div
+        className={`${
+          isOpen ? 'block bg-neutralv-900' : 'hidden'
+        } px-2 pb-4 md:p-0 md:ml-auto md:pr-1 lg:pr-6 font-open md:flex md:items-center absolute md:relative w-full md:w-auto md:bg-primary-900`}
+      >
         <a
           href='#'
           className='block px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'

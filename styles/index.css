@@ -7,3 +7,19 @@
 body {
   @apply bg-white min-h-screen m-0;
 }
+
+.ss-about {
+  background-image: url('../public/res/animation-end.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 640px) {
+  .ss-price-card {
+    @apply border-t-4 border-primary-600;
+  }
+}
+
+.ss-price-list {
+  list-style-image: url('../public/res/done-24px.svg');
+}
