@@ -3,10 +3,12 @@ import FirstSection from '../components/FirstSection';
 import AboutSection from '../components/AboutSection';
 import SolutionsSection from '../components/SolutionsSection';
 import PriceSection from '../components/PriceSection';
+import FacebookPixel from '../components/pixel/pixel-1';
 
 const index = () => (
   <div>
     <Head>
+      <FacebookPixel />
       <title>ScaleSoft</title>
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta
@@ -34,7 +36,10 @@ const index = () => (
       <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
       <meta name='msapplication-TileColor' content='#ffffff' />
       <meta name='theme-color' content='#ffffff' />
-      <meta name="google-site-verification" content="U0EhuDu7Jt2UA0BlFR59HAwOryFUzs6cs1iwYVVQbfk" />
+      <meta
+        name='google-site-verification'
+        content='U0EhuDu7Jt2UA0BlFR59HAwOryFUzs6cs1iwYVVQbfk'
+      />
     </Head>
     <FirstSection />
     <AboutSection />
