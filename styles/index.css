@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Quicksand:wght@700&display=swap');
-
+/* purgecss start ignore */
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
   @apply bg-white min-h-screen m-0;
 }
+
+
+@tailwind components;
+/* purgecss end ignore */
 
 .ss-about {
   background-image: url('../public/res/animation-end.svg');
@@ -23,3 +25,5 @@ body {
 .ss-price-list {
   list-style-image: url('../public/res/done-24px.svg');
 }
+
+@tailwind utilities;
