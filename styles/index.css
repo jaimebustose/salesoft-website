@@ -20,6 +20,36 @@ body {
   background-repeat: no-repeat;
 }
 
+.ss-slider {
+  -webkit-animation: slide-animation 60s linear infinite;
+  animation: slide-animation 60s linear infinite;
+}
+
+.ss-slider-two {
+  -webkit-animation: slide-animation 40s linear infinite;
+  animation: slide-animation 40s linear infinite;
+}
+
+.ss-footer {
+  background-image: url('../public/res/footer-background.svg');
+  background-size: 100%;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+@keyframes slide-animation {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 @media only screen and (max-width: 640px) {
   .ss-price-card {
     @apply border-t-4 border-primary-600;

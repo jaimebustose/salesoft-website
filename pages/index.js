@@ -5,6 +5,8 @@ import SolutionsSection from '../components/SolutionsSection';
 import PriceSection from '../components/PriceSection';
 import FacebookPixel from '../components/pixel/pixel';
 import GoogleAnalytics from '../components/analytics/gtag';
+import SkillsSection from '../components/SkillsSection';
+import Footer from '../components/layout/Footer';
 
 const index = () => (
   <div>
@@ -37,6 +39,10 @@ const index = () => (
       <link rel='manifest' href='/site.webmanifest' />
       <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
       <meta name='msapplication-TileColor' content='#ffffff' />
+      <meta
+        name='description'
+        content='ScaleSoft está enfocado en la generación de soluciones tecnológicas, a partir de la construcción de software a medida para empresas en fase de crecimiento.'
+      />
       <meta name='theme-color' content='#ffffff' />
       <meta
         name='google-site-verification'
@@ -51,6 +57,8 @@ const index = () => (
     <AboutSection />
     <SolutionsSection />
     <PriceSection />
+    <SkillsSection />
+    <Footer />
   </div>
 );
 
