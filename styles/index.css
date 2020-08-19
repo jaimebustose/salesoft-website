@@ -25,6 +25,10 @@ body {
   animation: slide-animation 60s linear infinite;
 }
 
+.ss-slider svg {
+  text-rendering: optimizeLegibility;
+}
+
 .ss-slider-two {
   -webkit-animation: slide-animation 40s linear infinite;
   animation: slide-animation 40s linear infinite;
