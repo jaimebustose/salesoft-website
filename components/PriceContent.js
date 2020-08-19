@@ -22,7 +22,7 @@ export default function PriceContent({ titulo, price, items, action, index }) {
         </ul>
         <button
           type='button'
-          className='w-full bg-transparent py-2 px-4 border border-primary-600 rounded-md text-primary-600'
+          className='w-full bg-transparent focus:outline-none py-2 px-4 border border-primary-600 rounded-md text-primary-600'
           onClick={action}
           style={{ width: '160px' }}
         >

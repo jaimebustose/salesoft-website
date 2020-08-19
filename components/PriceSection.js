@@ -6,13 +6,7 @@ export default function PriceSection() {
     {
       titulo: 'Sitio Web Básico*',
       price: '$300.000',
-      items: [
-        'React',
-        'Docker',
-        'Base de Datos',
-        'Diseño Básico',
-        'Boostrap',
-      ],
+      items: ['React', 'Docker', 'Base de Datos', 'Diseño Básico', 'Boostrap'],
       action: () => console.log('Solicitar'),
     },
     {
@@ -57,9 +51,7 @@ export default function PriceSection() {
       <h2 className='block sm:hidden mx-auto py-8 font-poppins font-medium text-3xl text-neutral-700'>
         Precios
       </h2>
-      <div
-        className='ss-price-flex flex flex-col w-5/6 sm:my-32 mx-auto sm:bg-white sm:border-t-4 rounded sm:border-primary-600'
-      >
+      <div className='ss-section-content ss-price-flex flex flex-col w-5/6 sm:my-32 mx-auto sm:bg-white sm:border-t-4 rounded sm:border-primary-600'>
         <h2 className='hidden sm:block mx-auto py-8 font-poppins font-medium text-2xl sm:text-4xl text-neutral-700'>
           Precios
         </h2>
@@ -68,8 +60,11 @@ export default function PriceSection() {
             <PriceContent {...props} key={index} index={index} />
           ))}
         </div>
-        <div className="mx-auto sm:ml-auto sm:mr-0 sm:p-4">
-          <small className="text-neutral-300">* Todos nuestros productos incluyen un sitio administrativo básico, y poseen características que les permiten ser escalables</small>
+        <div className='mx-auto sm:ml-auto sm:mr-0 sm:p-4'>
+          <small className='text-neutral-300'>
+            * Todos nuestros productos incluyen un sitio administrativo básico,
+            y poseen características que les permiten ser escalables
+          </small>
         </div>
       </div>
     </section>

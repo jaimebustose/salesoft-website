@@ -5,7 +5,7 @@ export default function Header({ isOpen, onHandleIsOpen }) {
     <header
       className={`${
         isOpen && 'bg-neutralv-900'
-      } text-white md:flex select-none md:bg-primary-900`}
+      } text-white md:flex select-none md:bg-primary-900 w-full`}
     >
       <div className='flex items-center justify-between px-4 lg:pl-8 py-4'>
         <div>

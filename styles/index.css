@@ -14,9 +14,14 @@ body {
   min-height: calc(100vh - 256px);
 }
 
+.ss-section-content {
+  max-width: 2240px;
+}
+
 .ss-about {
   background-image: url('../public/res/animation-end.svg');
   background-size: 100%;
+  background-position-y: top;
   background-repeat: no-repeat;
 }
 
@@ -35,10 +40,7 @@ body {
 }
 
 .ss-footer {
-  background-image: url('../public/res/footer-background.svg');
-  background-size: 100%;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
+  min-height: min-content;
 }
 
 @keyframes slide-animation {

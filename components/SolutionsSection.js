@@ -30,7 +30,7 @@ export default function SolutionsSection() {
     }
   ]
   return (
-    <section className="max-w-full min-h-screen flex flex-col text-center items-center mb-16 sm:mx-8 xl:mx-10">
+    <section className="ss-section-content max-w-full min-h-screen flex flex-col text-center items-center mb-16 sm:mx-8 xl:mx-10">
       <h2 className="font-poppins font-medium text-3xl sm:text-5xl text-neutral-700 sm:mb-20 xl:mb-4">
         Soluciones
       </h2>
