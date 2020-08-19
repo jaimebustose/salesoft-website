@@ -1,12 +1,8 @@
 import Head from 'next/head';
-import FirstSection from '../components/FirstSection';
-import AboutSection from '../components/AboutSection';
-import SolutionsSection from '../components/SolutionsSection';
-import PriceSection from '../components/PriceSection';
 import FacebookPixel from '../components/pixel/pixel';
 import GoogleAnalytics from '../components/analytics/gtag';
-import SkillsSection from '../components/SkillsSection';
-import Footer from '../components/layout/Footer';
+import Sections from '../components/Sections';
+
 
 const index = () => (
   <div>
@@ -53,12 +49,7 @@ const index = () => (
         content='84a7aed918drnjbrzf4p1oclk6lllz'
       />
     </Head>
-    <FirstSection />
-    <AboutSection />
-    <SolutionsSection />
-    <PriceSection />
-    <SkillsSection />
-    <Footer />
+    <Sections />
   </div>
 );
 
