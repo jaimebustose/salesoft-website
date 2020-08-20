@@ -1,18 +1,19 @@
-import Sections from '../components/Sections';
+import React from 'react';
+import ContactForm from '../components/ContactForm';
 import HeadTag from '../components/HeadTag';
 import FacebookMessenger from '../components/messenger/messenger';
 
-const index = () => (
+const contacto = () => (
   <div>
     <HeadTag
-      title={'ScaleSoft'}
+      title={'ScaleSoft | Contacto'}
       description={
         'ScaleSoft, generación de soluciones tecnológicas y software a medida'
       }
     />
     {/* <FacebookMessenger /> */}
-    <Sections />
+    <ContactForm />
   </div>
 );
 
-export default index;
+export default contacto;

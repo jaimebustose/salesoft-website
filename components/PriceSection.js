@@ -1,13 +1,19 @@
 import React from 'react';
 import PriceContent from './PriceContent';
+import { useRouter } from 'next/router';
 
 export default function PriceSection() {
+  const router = useRouter();
   const precios = [
     {
       titulo: 'Sitio Web Básico*',
       price: '$300.000',
       items: ['React', 'Docker', 'Base de Datos', 'Diseño Básico', 'Boostrap'],
-      action: () => console.log('Solicitar'),
+      action: () =>
+        router.push({
+          pathname: '/contacto',
+          query: { asunto: '[Sitio Web Básico]' },
+        }),
     },
     {
       titulo: 'Sitio de reserva de horas*',
@@ -19,7 +25,11 @@ export default function PriceSection() {
         'Diseño Básico',
         'Tailwind CSS',
       ],
-      action: () => console.log('Solicitar'),
+      action: () =>
+        router.push({
+          pathname: '/contacto',
+          query: { asunto: '[Sitio de reserva de horas]' },
+        }),
     },
     {
       titulo: 'Sitio E-commerce Premium*',
@@ -31,7 +41,11 @@ export default function PriceSection() {
         'Almacenamiento Cloud',
         'Tailwind CSS',
       ],
-      action: () => console.log('Solicitar'),
+      action: () =>
+        router.push({
+          pathname: '/contacto',
+          query: { asunto: '[Sitio E-commerce Premium]' },
+        }),
     },
     {
       titulo: 'Aplicación Web Delivery*',
@@ -43,7 +57,11 @@ export default function PriceSection() {
         'Estado del pedido',
         'Tailwind CSS',
       ],
-      action: () => console.log('Solicitar'),
+      action: () =>
+        router.push({
+          pathname: '/contacto',
+          query: { asunto: '[Aplicación Web Delivery]' },
+        }),
     },
   ];
   return (

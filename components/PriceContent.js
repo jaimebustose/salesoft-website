@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function PriceContent({ titulo, price, items, action, index }) {
   return (
@@ -17,7 +18,9 @@ export default function PriceContent({ titulo, price, items, action, index }) {
         </span>
         <ul className='ss-price-list font-open text-neutral-300 my-auto mb-8'>
           {items.map((item, index) => (
-            <li className='p-1' key={index}>{item}</li>
+            <li className='p-1' key={index}>
+              {item}
+            </li>
           ))}
         </ul>
         <button

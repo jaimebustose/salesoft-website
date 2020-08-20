@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Header({ isOpen, onHandleIsOpen }) {
   return (
@@ -61,12 +62,11 @@ export default function Header({ isOpen, onHandleIsOpen }) {
         >
           Tecnologías
         </a>
-        <a
-          href='#'
-          className='mt-1 sm:border-none sm:mt-0 block px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
-        >
-          Contacto
-        </a>
+        <Link href='/contacto'>
+          <a className='mt-1 sm:border-none sm:mt-0 block px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'>
+            Contacto
+          </a>
+        </Link>
       </div>
     </header>
   );
