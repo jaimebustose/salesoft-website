@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Quicksand:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Quicksand:wght@700&display=swap");
 
 /* purgecss start ignore */
 @tailwind base;
@@ -19,7 +19,7 @@ body {
 }
 
 .ss-about {
-  background-image: url('../public/res/animation-end.svg');
+  background-image: url("../public/res/animation-end.svg");
   background-size: 100%;
   background-position-y: top;
   background-repeat: no-repeat;
@@ -39,9 +39,6 @@ body {
   animation: slide-animation 40s linear infinite;
 }
 
-.ss-footer {
-  min-height: min-content;
-}
 
 @keyframes slide-animation {
   0% {
@@ -63,7 +60,7 @@ body {
 }
 
 .ss-price-list {
-  list-style-image: url('../public/res/done-24px.svg');
+  list-style-image: url("../public/res/done-24px.svg");
 }
 
 @tailwind utilities;
