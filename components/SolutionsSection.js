@@ -18,7 +18,7 @@ export default function SolutionsSection() {
           pathname: '/contacto',
           query: { asunto: '[Sitio Web básico]' },
         }),
-      solutionAnimation: <BasicoAnimation />,
+      solutionAnimation: <BasicoAnimation className='h-auto' />,
     },
     {
       nombreSolucion: 'Sitio de reserva de horas',
@@ -29,7 +29,7 @@ export default function SolutionsSection() {
           pathname: '/contacto',
           query: { asunto: '[Sitio de reserva de horas]' },
         }),
-      solutionAnimation: <ReservaAnimation />,
+      solutionAnimation: <ReservaAnimation className='h-auto' />,
     },
     {
       nombreSolucion: 'Sitio E-commerce Premium',
@@ -40,7 +40,7 @@ export default function SolutionsSection() {
           pathname: '/contacto',
           query: { asunto: '[Sitio E-commerce Premium]' },
         }),
-      solutionAnimation: <EcommerceAnimation />,
+      solutionAnimation: <EcommerceAnimation className='h-auto' />,
     },
     {
       nombreSolucion: 'Aplicación Web Delivery',
@@ -51,7 +51,7 @@ export default function SolutionsSection() {
           pathname: '/contacto',
           query: { asunto: '[Sitio E-commerce Premium]' },
         }),
-      solutionAnimation: <DeliveryAnimation />,
+      solutionAnimation: <DeliveryAnimation className='h-auto' />,
     },
   ];
   return (

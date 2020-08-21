@@ -19,7 +19,7 @@ export default function ContactForm() {
         <div className='flex flex-col justify-between'>
           <div className='relative'>
             <Link href='/'>
-              <a className='absolute flex text-gray-700 fill-current sm:hover:text-gray-900 top-0 -mt-8 sm:-mt-6 duration-200'>
+              <a className='absolute flex text-gray-700 fill-current sm:hover:text-gray-900 top-0 -mt-8 lg:-mt-6 duration-200'>
                 <ArrowLeft className='h-auto mr-2' style={{ width: '14' }} />
                 Volver
               </a>

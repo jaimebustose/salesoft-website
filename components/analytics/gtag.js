@@ -6,7 +6,7 @@ export default function gtag() {
       <script
         async
         src='https://www.googletagmanager.com/gtag/js?id=UA-175622039-1'
-      ></script>
+      />
       <script
         dangerouslySetInnerHTML={{
           __html: `
