@@ -20,7 +20,10 @@ export default function ContactForm() {
           <div className='relative'>
             <Link href='/'>
               <a className='absolute flex text-gray-700 fill-current sm:hover:text-gray-900 top-0 -mt-8 lg:-mt-6 duration-200'>
-                <ArrowLeft className='mr-2 align-baseline' style={{ width: '14px' }} />
+                <ArrowLeft
+                  className='mr-2 align-baseline'
+                  style={{ width: '14px', height: '24px' }}
+                />
                 Volver
               </a>
             </Link>
