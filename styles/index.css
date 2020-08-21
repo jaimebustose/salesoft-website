@@ -20,7 +20,7 @@ body {
 
 .ss-about {
   background-image: url("../public/res/animation-end.svg");
-  background-size: 100%;
+  background-size: 101%;
   background-position-y: top;
   background-repeat: no-repeat;
 }

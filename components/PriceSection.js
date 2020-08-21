@@ -78,7 +78,7 @@ export default function PriceSection() {
             <PriceContent {...props} key={index} index={index} />
           ))}
         </div>
-        <div className='mx-auto sm:ml-auto sm:mr-0 sm:p-4'>
+        <div className='mx-auto pb-4 sm:ml-auto sm:mr-0 sm:p-4'>
           <small className='text-neutral-300'>
             * Todos nuestros productos incluyen un sitio administrativo básico,
             y poseen características que les permiten ser escalables
