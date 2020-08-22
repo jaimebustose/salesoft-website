@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
+import Scroll from 'react-scroll';
 
 export default function Header({ isOpen, onHandleIsOpen }) {
+
+  useEffect(() => {
+    () => {
+      Scroll.Events.scrollEvent.register('begin', (to, element) => {
+        console.log('begin', arguments);
+      });
+      Scroll.Events.scrollEvent.register('end', (to, element) => {
+        console.log('end', arguments);
+      })
+    }
+    return () => {
+      Scroll.Events.scrollEvent.remove('begin');
+      Scroll.Events.scrollEvent.remove('end');
+    }
+  }, [])
+
   return (
     <header
       className={`${
@@ -38,32 +55,44 @@ export default function Header({ isOpen, onHandleIsOpen }) {
           isOpen ? 'block bg-neutralv-900' : 'hidden'
         } px-2 pb-4 md:p-0 md:ml-auto md:pr-1 lg:pr-6 font-open md:flex md:items-center absolute md:relative w-full md:w-auto md:bg-primary-900`}
       >
-        <a
-          href='#'
-          className='block px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
+        <Scroll.Link
+          spy={true}
+          smooth={true}
+          to={'about'}
+          duration={500}
+          className='block cursor-pointer px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
         >
           Nosotros
-        </a>
-        <a
-          href='#'
-          className='mt-1 sm:mt-0 block px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
+        </Scroll.Link>
+        <Scroll.Link
+          spy={true}
+          smooth={true}
+          to={'soluciones'}
+          duration={500}
+          className='mt-1 sm:mt-0 block cursor-pointer px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
         >
           Soluciones
-        </a>
-        <a
-          href='#'
-          className='mt-1 sm:mt-0 block px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
+        </Scroll.Link>
+        <Scroll.Link
+          spy={true}
+          smooth={true}
+          to={'precios'}
+          duration={500}
+          className='mt-1 sm:mt-0 block cursor-pointer px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
         >
           Precios
-        </a>
-        <a
-          href='#'
-          className='mt-1 sm:mt-0 block px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
+        </Scroll.Link>
+        <Scroll.Link
+          spy={true}
+          smooth={true}
+          to={'tecnologias'}
+          duration={500}
+          className='mt-1 sm:mt-0 block cursor-pointer px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'
         >
           Tecnologías
-        </a>
+        </Scroll.Link>
         <Link href='/contacto'>
-          <a className='mt-1 sm:border-none sm:mt-0 block px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'>
+          <a className='mt-1 sm:border-none sm:mt-0 block cursor-pointer px-2 py-1 sm:px-4 lg:px-6 text-sm font-normal sm:opacity-75 sm:hover:opacity-100 duration-200'>
             Contacto
           </a>
         </Link>

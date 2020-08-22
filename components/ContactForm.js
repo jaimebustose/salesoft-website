@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import Link from 'next/link';
 import ArrowLeft from '../public/res/arrow-left.svg';
 import { useRouter } from 'next/router';
+import CheckAnimation from '../public/res/check.svg';
+import ErrorAnimation from '../public/res/error.svg';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function ContactForm() {
   const router = useRouter();
+  const recaptchaRef = useRef(null);
   const { email, asunto } = router.query;
   const { register, handleSubmit, watch, errors } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const recaptchaValue = recaptchaRef.current.getValue();
+  };
 
   return (
     <div className='flex min-h-screen bg-gray-100 lg:bg-white'>
@@ -38,62 +44,102 @@ export default function ContactForm() {
           </div>
         </div>
         <div className='text-left'>
-          <div className=''>
-            <div>
+          <div className='w-full flex-col'>
+            <div className='w-full'>
               <span className='uppercase text-sm text-gray-600 font-bold'>
                 Nombre
               </span>
-              <input
-                className='w-full bg-gray-300 text-gray-900 mt-2 px-4 py-2 block appearance-none rounded-md focus:outline-none  leading-normal'
-                type='text'
-                name='nombre'
-                placeholder='Nombre Completo'
-                ref={register({ required: true })}
-              />
+              <div className='relative'>
+                <input
+                  className='w-full bg-gray-300 text-gray-900 mt-2 px-4 py-2 block appearance-none rounded-md focus:outline-none  leading-normal'
+                  type='text'
+                  name='nombre'
+                  placeholder='Nombre Completo'
+                  ref={register({ required: true })}
+                />
+                {errors.nombre && (
+                  <span className='ss-error-container absolute right-0 mr-3 fill-current text-red-600'>
+                    <ErrorAnimation className='ss-error-animation' />
+                  </span>
+                )}
+              </div>
             </div>
             <div className='mt-8 grid gap-4 grid-cols-2'>
               <div className='w-full'>
                 <span className='uppercase text-sm text-gray-600 font-bold'>
                   Asunto
                 </span>
-                <input
-                  className='w-full  bg-gray-300 text-gray-900 mt-2 px-4 py-2 block appearance-none rounded-md focus:outline-none  leading-normal'
-                  type='text'
-                  name='asunto'
-                  defaultValue={`${asunto ? asunto : '[Consulta]'}`}
-                  placeholder='[Asunto]'
-                  ref={register({ required: true })}
-                />
+                <div className='relative'>
+                  <input
+                    className='w-full  bg-gray-300 text-gray-900 mt-2 px-4 py-2 block appearance-none rounded-md focus:outline-none  leading-normal'
+                    type='text'
+                    name='asunto'
+                    defaultValue={`${asunto ? asunto : '[Consulta]'}`}
+                    placeholder='[Asunto]'
+                    ref={register({ required: true })}
+                  />
+                  {errors.asunto && (
+                    <span className='ss-error-container absolute right-0 mr-3 fill-current text-red-600'>
+                      <ErrorAnimation className='ss-error-animation' />
+                    </span>
+                  )}
+                </div>
               </div>
               <div className='w-full'>
                 <span className='uppercase text-sm text-gray-600 font-bold'>
                   Email
                 </span>
-                <input
-                  className='w-full bg-gray-300 text-gray-900 mt-2 px-4 py-2 block appearance-none rounded-md focus:outline-none leading-normal'
-                  type='email'
-                  defaultValue={email}
-                  name='email'
-                  placeholder='usuario@mail.com'
-                  ref={register({ required: true })}
-                />
+                <div className='relative'>
+                  <input
+                    className='w-full bg-gray-300 text-gray-900 mt-2 px-4 py-2 block appearance-none rounded-md focus:outline-none leading-normal'
+                    type='email'
+                    defaultValue={email}
+                    name='email'
+                    placeholder='usuario@mail.com'
+                    ref={register({ required: true })}
+                  />
+                  {errors.email && (
+                    <span className='ss-error-container absolute right-0 mr-3 fill-current text-red-600'>
+                      <ErrorAnimation className='ss-error-animation' />
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
             <div className='mt-8'>
               <span className='uppercase text-sm text-gray-600 font-bold'>
                 Mensaje
               </span>
-              <textarea
-                className='w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none resize-none'
-                name='mensaje'
-                ref={register({
-                  required: true,
-                  minLength: 20,
-                  maxLength: 240,
-                })}
-              ></textarea>
+              <div className='relative'>
+                <textarea
+                  className={`${
+                    errors.mensaje && 'border-red-600 border'
+                  } w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none resize-none`}
+                  name='mensaje'
+                  ref={register({
+                    required: true,
+                    minLength: 1,
+                    maxLength: 240,
+                  })}
+                />
+                {watch('mensaje') && (
+                  <span className='absolute bottom-0 right-0 m-4 text-gray-700'>
+                    <span>{watch('mensaje').length}/</span>
+                    <span>240</span>
+                  </span>
+                )}
+              </div>
             </div>
-            <div className='mt-8'>
+            <div className='my-4 ml-auto' style={{ width: 'max-content' }}>
+              {
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey='6LeTO8IZAAAAALCFlhlM7cKIQZSBAZamN4SfoGsg'
+                  onChange={(value) => console.log('Captcha: ', value)}
+                />
+              }
+            </div>
+            <div className='mt-4'>
               <button
                 type='submit'
                 className='uppercase text-sm font-bold tracking-wide bg-neutralv-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none'

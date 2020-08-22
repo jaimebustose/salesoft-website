@@ -1,13 +1,14 @@
 import React from 'react';
 
 export default function SolutionCard({
+  index,
   nombreSolucion,
   descripcion,
   action,
   solutionAnimation,
 }) {
   return (
-    <div className='ss-section-content solution-flex flex flex-col lg:flex-row my-auto xl:mt-24 items-center justify-center w-full xl:w-5/6'>
+    <div className='ss-section-content solution-flex flex flex-col lg:flex-row lg:my-auto my-24 xl:mt-24 items-center justify-center w-full xl:w-5/6 focus:outline-none'>
       <div className='flex-initial w-2/3 lg:text-left order-2 text-center mt-10 lg:mt-0'>
         <h2 className='font-poppins font-medium text-2xl sm:text-4xl text-neutral-700'>
           {nombreSolucion}

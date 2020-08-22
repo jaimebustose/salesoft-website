@@ -8,6 +8,11 @@ export default function HeadTag({ title, description }) {
     <Head>
       <FacebookPixel />
       <GoogleAnalytics />
+      <script
+        src='https://www.google.com/recaptcha/api.js'
+        async
+        defer
+      ></script>
       <title>{title}</title>
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta name='msapplication-TileColor' content='#ffffff' />
@@ -20,10 +25,7 @@ export default function HeadTag({ title, description }) {
         name='facebook-domain-verification'
         content='84a7aed918drnjbrzf4p1oclk6lllz'
       />
-      <meta
-        name='description'
-        content={description}
-      />
+      <meta name='description' content={description} />
       <link
         rel='apple-touch-icon'
         sizes='180x180'
@@ -44,5 +46,5 @@ export default function HeadTag({ title, description }) {
       <link rel='manifest' href='/site.webmanifest' />
       <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
     </Head>
-  )
+  );
 }
