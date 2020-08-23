@@ -169,7 +169,7 @@ export default function FooterContent() {
                 }}
               >
                 <a className='my-3 block font-open text-neutral-300 hover:text-neutral-200'>
-                  Scalesoft@gmail.com
+                  Scalesoftcl@gmail.com
                   <span className='text-teal-300 text-xs p-1'></span>
                 </a>
               </Link>

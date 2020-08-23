@@ -113,7 +113,8 @@ export default function ContactForm() {
               </h2>
               <div className='text-gray-700 mt-8'>
                 ¡Hazla corta! envianos un <b>e-mail</b> y te daremos respuesta
-                de inmediato.
+                de inmediato o contáctanos a nuestro correo
+                <b>scalesoftcl@gmail.com</b>.
               </div>
             </div>
           </div>
