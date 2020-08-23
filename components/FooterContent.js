@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import FacebookAnimation from '../public/res/logos/facebook-brands.svg';
 import InstagramAnimation from '../public/res/logos/instagram-brands.svg';
@@ -7,6 +7,21 @@ import WhatsAppAnimation from '../public/res/logos/whatsapp-brands.svg';
 import Scroll from 'react-scroll';
 
 export default function FooterContent() {
+  useEffect(() => {
+    () => {
+      Scroll.Events.scrollEvent.register('begin', (to, element) => {
+        console.log('begin', arguments);
+      });
+      Scroll.Events.scrollEvent.register('end', (to, element) => {
+        console.log('end', arguments);
+      });
+    };
+    return () => {
+      Scroll.Events.scrollEvent.remove('begin');
+      Scroll.Events.scrollEvent.remove('end');
+    };
+  }, []);
+
   return (
     <>
       <div className='bg-primary-900'>
