@@ -4,6 +4,7 @@ import FacebookAnimation from '../public/res/logos/facebook-brands.svg';
 import InstagramAnimation from '../public/res/logos/instagram-brands.svg';
 import LinkedinAnimation from '../public/res/logos/linkedin-brands.svg';
 import WhatsAppAnimation from '../public/res/logos/whatsapp-brands.svg';
+import Scroll from 'react-scroll';
 
 export default function FooterContent() {
   return (
@@ -77,17 +78,21 @@ export default function FooterContent() {
               <div className='text-xs font-poppins text-white uppercase font-medium '>
                 Acerca de nosotros
               </div>
-              <a
-                className='my-3 block font-open text-neutral-300 hover:text-neutral-200'
-                href='/#'
+              <Scroll.Link
+                spy={true}
+                smooth={true}
+                to={'soluciones'}
+                duration={500}
+                className='my-3 block font-open text-neutral-300 hover:text-neutral-200 cursor-pointer'
               >
                 Nuestras soluciones{' '}
                 <span className='text-teal-300 text-xs p-1'></span>
-              </a>
+              </Scroll.Link>
               <a
                 target='_blank'
                 className='my-3 block font-open text-neutral-300 hover:text-neutral-200'
                 href='https://github.com/ScaleSoftcl'
+                rel='noopener noreferrer'
               >
                 Proyectos{' '}
                 <span className='text-teal-300 text-xs p-1'>Nuevo</span>
@@ -113,6 +118,7 @@ export default function FooterContent() {
                 target='_blank'
                 className='my-3 block font-open text-neutral-300 hover:text-neutral-200'
                 href='https://jaimebustose.gitlab.io/portafolio'
+                rel='noopener noreferrer'
               >
                 Portafolio Jaime
                 <span className='text-teal-300 text-xs p-1'></span>
@@ -121,6 +127,7 @@ export default function FooterContent() {
                 target='_blank'
                 className='my-3 block font-open text-neutral-300 hover:text-neutral-200'
                 href='https://manfredengler.github.io/'
+                rel='noopener noreferrer'
               >
                 Portafolio Manfred
                 <span className='text-teal-300 text-xs p-1'></span>

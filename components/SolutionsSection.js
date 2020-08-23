@@ -63,7 +63,7 @@ export default function SolutionsSection() {
       setWidth(window.screen.height);
     }
   }, []);
-  
+
   return (
     <section className='ss-section-content min-h-screen flex flex-col text-center items-center mb-16'>
       <h2 className='mt-4 font-poppins font-medium text-3xl sm:text-5xl text-neutral-700 mb-12 sm:mb-20 xl:mb-12 sm:mx-8 xl:mx-10'>
