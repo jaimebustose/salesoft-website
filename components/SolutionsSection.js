@@ -37,7 +37,7 @@ export default function SolutionsSection() {
     {
       nombreSolucion: 'Sitio E-commerce Premium',
       descripcion:
-        'Todos tus productos en un espacio personalizado e ideado para maximizar al máximo tus ventas.',
+        'Todos tus productos en un espacio personalizado e ideado para potenciar al máximo tus ventas.',
       action: () =>
         router.push({
           pathname: '/contacto',

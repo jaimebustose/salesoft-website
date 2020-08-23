@@ -1,6 +1,5 @@
 import ContactForm from '../components/ContactForm';
 import HeadTag from '../components/HeadTag';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const contacto = () => (
   <div>
@@ -9,13 +8,6 @@ const contacto = () => (
       description={
         'ScaleSoft, generación de soluciones tecnológicas y software a medida'
       }
-    />
-    <MessengerCustomerChat
-      pageId='112750400525941'
-      appId='333767174430636'
-      language='es_ES'
-      loggedInGreeting='Hola!, ¿Cuéntanos como podemos ayudarte?'
-      loggedOutGreeting='Hola!, ¿Cuéntanos como podemos ayudarte?'
     />
     <ContactForm />
   </div>
