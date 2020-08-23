@@ -5,7 +5,7 @@ import Privacidad from '../components/Privacidad';
 const privacy = () => (
   <div>
     <HeadTag
-      title={'ScaleSoft'}
+      title={'ScaleSoft | Política de privacidad'}
       description={
         'ScaleSoft, generación de soluciones tecnológicas y software a medida'
       }

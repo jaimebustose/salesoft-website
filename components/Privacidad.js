@@ -4,9 +4,9 @@ export default function Privacidad() {
   return (
     <div className='w-full mt-10 block'>
       <div className='flex flex-col mb-10'>
-        <div className='mx-auto' style={{ maxWidth: '950px' }}>
+        <div className='mx-4 sm:mx-auto' style={{ maxWidth: '950px' }}>
           <h1 className='text-3xl sm:text-4xl font-poppins font-medium mb-10'>
-            Politica de privacidad
+            Política de privacidad
           </h1>
           <div className='w-full'>
             <h2 className='text-2xl font-open font-bold mb-2'>Preambulo: </h2>
@@ -33,17 +33,17 @@ export default function Privacidad() {
             </p>
             <h2 className='text-2xl font-open font-bold mb-2'>1. General</h2>
             <p className='text-base leading-8 font-open mb-10'>
-              ScaleSoft respeta la privacidad de todos los individuos que visitan
-              nuestro sitio web. Esta Política de Privacidad refleja la
+              ScaleSoft respeta la privacidad de todos los individuos que
+              visitan nuestro sitio web. Esta Política de Privacidad refleja la
               información que ScaleSoft recoge y cómo utilizaremos dicha
               información.ScaleSoft desea proporcionarle el máximo control a su
               alcance sobre la información que le identifica a usted
-              personalmente. Cuando usted lo solicite, ScaleSoft, (a) le permitirá
-              acceder a su información personal; (b) retirará su Información
-              Personal de nuestra base de datos; y, (c) corregirá la Información
-              Personal que usted haya manifestado ser errónea. Esta política de
-              privacidad no aplica hacia otros sitios web que se pueden acceder
-              a través de vínculos en el sitio web de ScaleSoft.
+              personalmente. Cuando usted lo solicite, ScaleSoft, (a) le
+              permitirá acceder a su información personal; (b) retirará su
+              Información Personal de nuestra base de datos; y, (c) corregirá la
+              Información Personal que usted haya manifestado ser errónea. Esta
+              política de privacidad no aplica hacia otros sitios web que se
+              pueden acceder a través de vínculos en el sitio web de ScaleSoft.
             </p>
             <h2 className='text-2xl font-open font-bold mb-2'>
               2. Información Personal
@@ -65,34 +65,34 @@ export default function Privacidad() {
               3. Tratamiento o de los datos de carácter personal
             </h2>
             <p className='text-base leading-8 font-open mb-10'>
-              ScaleSoft proporciona a los usuarios los recursos técnicos adecuados
-              para que, con carácter previo, puedan acceder a esta Política de
-              Privacidad y puedan dar su consentimiento a fin de que ScaleSoft
-              proceda al tratamiento automatizado de sus datos personales. En
-              cuanto a los formularios electrónicos de recogida de datos del
-              sitio web, salvo en los campos en que se indique lo contrario, las
-              respuestas a las preguntas sobre datos personales son voluntarias,
-              sin que la falta de contestación implique una disminución en la
-              calidad o cantidad de los servicios correspondientes, a menos que
-              se indique otra cosa. Cuando usted nos suministre voluntariamente
-              datos de carácter personal, nos está autorizando para utilizar
-              dicha Información Personal de acuerdo con los términos y
-              condiciones de nuestra Política de Privacidad. El usuario
-              garantiza que los datos personales facilitados a ScaleSoft son
-              veraces y se hace responsable de comunicar a ésta cualquier
-              modificación en los mismos. ScaleSoft puede guardar y procesar sus
-              datos personales para entender mejor sus necesidades y el modo en
-              el que podemos mejorar nuestros productos y servicios, y podemos
-              utilizar su información personal para tomar contacto con usted,
-              por ejemplo, para personalizar la información de los productos o
-              servicios que le ofrezcamos, para poder enviarles materiales de
-              marketing o promoción o para poder responder a sus comentarios o
-              solicitudes de información. En todo caso, ScaleSoft no vende,
-              arrienda ni cede a ningún título oneroso información personal
-              Cualquier cambio en esta Política de Privacidad será publicado en
-              esta web page. Esto le permite conocer en cualquier momento qué
-              información estamos guardadndo y cómo recolectamos y usamos dicha
-              información.
+              ScaleSoft proporciona a los usuarios los recursos técnicos
+              adecuados para que, con carácter previo, puedan acceder a esta
+              Política de Privacidad y puedan dar su consentimiento a fin de que
+              ScaleSoft proceda al tratamiento automatizado de sus datos
+              personales. En cuanto a los formularios electrónicos de recogida
+              de datos del sitio web, salvo en los campos en que se indique lo
+              contrario, las respuestas a las preguntas sobre datos personales
+              son voluntarias, sin que la falta de contestación implique una
+              disminución en la calidad o cantidad de los servicios
+              correspondientes, a menos que se indique otra cosa. Cuando usted
+              nos suministre voluntariamente datos de carácter personal, nos
+              está autorizando para utilizar dicha Información Personal de
+              acuerdo con los términos y condiciones de nuestra Política de
+              Privacidad. El usuario garantiza que los datos personales
+              facilitados a ScaleSoft son veraces y se hace responsable de
+              comunicar a ésta cualquier modificación en los mismos. ScaleSoft
+              puede guardar y procesar sus datos personales para entender mejor
+              sus necesidades y el modo en el que podemos mejorar nuestros
+              productos y servicios, y podemos utilizar su información personal
+              para tomar contacto con usted, por ejemplo, para personalizar la
+              información de los productos o servicios que le ofrezcamos, para
+              poder enviarles materiales de marketing o promoción o para poder
+              responder a sus comentarios o solicitudes de información. En todo
+              caso, ScaleSoft no vende, arrienda ni cede a ningún título oneroso
+              información personal Cualquier cambio en esta Política de
+              Privacidad será publicado en esta web page. Esto le permite
+              conocer en cualquier momento qué información estamos guardadndo y
+              cómo recolectamos y usamos dicha información.
             </p>
             <h2 className='text-2xl font-open font-bold mb-2'>4. Seguridad</h2>
             <p className='text-base leading-8 font-open mb-10'>
@@ -105,15 +105,15 @@ export default function Privacidad() {
               estarán obligados a mantener la información confidencial y no
               tendrán permiso para utilizar esta información para cualquier otra
               finalidad que no sea desempeñar los servicios que están realizando
-              para ScaleSoft. Al proporcionarnos su información, usted acepta que
-              las referidas empresas externas a ScaleSoft puedan tener acceso a sus
-              datos personales en razón de los servicios que estas empresas
-              prestan a ScaleSoft. En algunos casos, será necesario que
-              transfiramos sus consultas a compañías afiliadas al Grupo ScaleSoft.
-              También en estos casos sus datos serán tratados de manera
-              confidencial. ScaleSoft podría llegar a revelar datos personales si
-              fuese debidamente requerido por ley, tribunal o autoridad
-              competente.
+              para ScaleSoft. Al proporcionarnos su información, usted acepta
+              que las referidas empresas externas a ScaleSoft puedan tener
+              acceso a sus datos personales en razón de los servicios que estas
+              empresas prestan a ScaleSoft. En algunos casos, será necesario que
+              transfiramos sus consultas a compañías afiliadas al Grupo
+              ScaleSoft. También en estos casos sus datos serán tratados de
+              manera confidencial. ScaleSoft podría llegar a revelar datos
+              personales si fuese debidamente requerido por ley, tribunal o
+              autoridad competente.
             </p>
             <h2 className='text-2xl font-open font-bold mb-2'>
               5. Información no personal recogida automáticamente
@@ -186,7 +186,9 @@ export default function Privacidad() {
               usuario debe desconectar su cuenta de usuario antes de visitar
               nuestras webs.
             </p>
-            <small className='font-open mb-10 text-sm text-gray-600 uppercase'>Actualizado, 23 de agosto 2020</small>
+            <small className='font-open mb-10 text-sm text-gray-600 uppercase'>
+              Actualizado, 23 de agosto 2020
+            </small>
           </div>
         </div>
       </div>
