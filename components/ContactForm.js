@@ -193,13 +193,13 @@ export default function ContactForm() {
                     ref={register({
                       required: true,
                       minLength: 1,
-                      maxLength: 240,
+                      maxLength: 500,
                     })}
                   />
                   {watch('mensaje') && (
                     <span className='absolute bottom-0 right-0 m-4 text-gray-700'>
                       <span>{watch('mensaje').length}/</span>
-                      <span>240</span>
+                      <span>500</span>
                     </span>
                   )}
                 </div>
