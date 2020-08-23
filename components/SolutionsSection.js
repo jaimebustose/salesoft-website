@@ -52,7 +52,7 @@ export default function SolutionsSection() {
       action: () =>
         router.push({
           pathname: '/contacto',
-          query: { asunto: '[Sitio E-commerce Premium]' },
+          query: { asunto: '[Aplicación Web Delivery]' },
         }),
       solutionAnimation: <DeliveryAnimation className='h-auto' />,
     },
