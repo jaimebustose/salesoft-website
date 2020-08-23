@@ -1,18 +1,18 @@
-import ContactForm from '../components/ContactForm';
 import HeadTag from '../components/HeadTag';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import Privacidad from '../components/Privacidad';
 
-const contacto = () => (
+const privacy = () => (
   <div>
     <HeadTag
-      title={'ScaleSoft | Contacto'}
+      title={'ScaleSoft'}
       description={
         'ScaleSoft, generación de soluciones tecnológicas y software a medida'
       }
     />
     <MessengerCustomerChat pageId='112750400525941' appId='333767174430636' />
-    <ContactForm />
+    <Privacidad />
   </div>
 );
 
-export default contacto;
+export default privacy;

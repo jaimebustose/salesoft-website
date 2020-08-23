@@ -129,6 +129,12 @@ export default function FooterContent() {
               <div className='text-xs font-poppins text-white uppercase font-medium'>
                 Información
               </div>
+              <Link href='/politica-de-privacidad'>
+                <a className='my-3 block font-open text-neutral-300 hover:text-neutral-200'>
+                  Política de privacidad
+                  <span className='text-teal-300 text-xs p-1'></span>
+                </a>
+              </Link>
               <a
                 target='_blank'
                 className='my-3 block font-open text-neutral-300 hover:text-neutral-200'

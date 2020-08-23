@@ -1,6 +1,6 @@
 import Sections from '../components/Sections';
 import HeadTag from '../components/HeadTag';
-import FacebookMessenger from '../components/messenger/messenger';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const index = () => (
   <div>
@@ -10,7 +10,7 @@ const index = () => (
         'ScaleSoft, generación de soluciones tecnológicas y software a medida'
       }
     />
-    {/* <FacebookMessenger /> */}
+    <MessengerCustomerChat pageId='112750400525941' appId='333767174430636' />
     <Sections />
   </div>
 );
