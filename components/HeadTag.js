@@ -26,6 +26,17 @@ export default function HeadTag({ title, description }) {
         content='84a7aed918drnjbrzf4p1oclk6lllz'
       />
       <meta name='description' content={description} />
+      <meta property='og:title' content={title} />
+      <meta property='og:type' content='website' />
+      <meta property='og:url' content='https://scalesoft.cl' />
+      <meta
+        property='og:image'
+        content='https://scalesoft.s3-sa-east-1.amazonaws.com/static/logo-cuadrado.png'
+      />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:alt" content="ScaleSoft" />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:height" content="400" />
       <link
         rel='apple-touch-icon'
         sizes='180x180'
