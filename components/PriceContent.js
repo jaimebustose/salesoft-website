@@ -14,7 +14,7 @@ export default function PriceContent({ titulo, price, items, action, index }) {
           {titulo}
         </h2>
         <span className='text-neutral-300 text-center my-auto font-open'>
-          <span className='text-lg text-neutral-900'>{price} </span>clp
+          <span className='text-lg text-neutral-900'>{price} </span>CLP
         </span>
         <ul className='ss-price-list font-open text-neutral-300 my-auto mb-8'>
           {items.map((item, index) => (
