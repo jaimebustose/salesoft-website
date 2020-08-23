@@ -83,7 +83,7 @@ export default function ContactForm() {
               isError
                 ? 'bg-red-100 border-red-500 text-red-700'
                 : 'bg-green-100 border-green-500 text-green-700'
-            } ss-alert border-l-4 p-4 sm:absolute sm:right-0 sm:top-0 m-4`}
+            } hidden sm:block ss-alert border-l-4 p-4 sm:absolute sm:right-0 sm:top-0 m-4`}
             role='alert'
           >
             <p className='font-bold'>{isError ? 'Error' : 'Completado'}</p>
@@ -138,7 +138,7 @@ export default function ContactForm() {
                   )}
                 </div>
               </div>
-              <div className='mt-8 grid gap-4 grid-cols-2'>
+              <div className='mt-8 grid gap-4 sm:grid-cols-2'>
                 <div className='w-full'>
                   <span className='uppercase text-sm text-gray-600 font-bold'>
                     Asunto
@@ -212,6 +212,22 @@ export default function ContactForm() {
                   />
                 }
               </div>
+              {alert && (
+                <div className='my-4 sm:hidden'>
+                  <p
+                    className={`${isError ? 'text-red-600' : 'text-green-600'}`}
+                  >
+                    <span
+                      className={`${
+                        isError ? 'text-red-600' : 'text-green-600'
+                      } font-medium`}
+                    >
+                      {isError ? 'Error:' : 'Completado: '}
+                    </span>{' '}
+                    {message}
+                  </p>
+                </div>
+              )}
               <div className='mt-4'>
                 <button
                   type='submit'
