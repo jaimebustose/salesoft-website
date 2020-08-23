@@ -10,7 +10,7 @@ const index = () => (
         'ScaleSoft, generación de soluciones tecnológicas y software a medida'
       }
     />
-    <MessengerCustomerChat pageId='112750400525941' appId='333767174430636' />
+    <MessengerCustomerChat pageId='112750400525941' appId='333767174430636' language='es_ES' />
     <Sections />
   </div>
 );
