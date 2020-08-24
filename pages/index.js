@@ -5,7 +5,7 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 const index = () => (
   <div>
     <HeadTag
-      title={'ScaleSoft - digitaliza tu StartUp y alcanza el siguiente nivel'}
+      title={'ScaleSoft - Digitaliza tu StartUp y alcanza el siguiente nivel'}
       description={
         'ScaleSoft está enfocado en la generación de soluciones tecnológicas, a partir de la construcción de software a medida para empresas en fase de crecimiento.'
       }

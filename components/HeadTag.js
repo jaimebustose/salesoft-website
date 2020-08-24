@@ -30,7 +30,7 @@ export default function HeadTag({ title, description, canonical }) {
       <meta property='og:locale' content='es_ES' />
       <meta
         property='og:title'
-        content='ScaleSoft - digitaliza tu StartUp y alcanza el siguiente nivel'
+        content='ScaleSoft - Digitaliza tu StartUp y alcanza el siguiente nivel'
       />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://scalesoft.cl' />
