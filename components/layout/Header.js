@@ -25,11 +25,12 @@ export default function Header({ isOpen, onHandleIsOpen }) {
         isOpen && 'bg-neutralv-900'
       } text-white md:flex select-none md:bg-primary-900 w-full`}
     >
+      <h1 className='sr-only'>ScaleSoft - digitaliza tu StartUp y alcanza el siguiente nivel</h1>
       <div className='flex items-center justify-between px-4 lg:pl-8 py-4'>
         <div>
-          <h1 className='font-quick text-2xl md:text-4xl duration-200 cursor-pointer'>
+          <h2 className='font-quick text-2xl md:text-4xl duration-200 cursor-pointer'>
             <span className='text-primary-600'>Scale</span>Soft
-          </h1>
+          </h2>
         </div>
         <div className='md:hidden'>
           <button

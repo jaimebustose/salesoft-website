@@ -66,13 +66,13 @@ export default function PriceSection() {
   ];
   return (
     <section className='min-h-screen bg-neutral-100 flex flex-col'>
-      <h2 className='block sm:hidden mx-auto py-8 font-poppins font-medium text-3xl text-neutral-700'>
+      <h3 className='block sm:hidden mx-auto py-8 font-poppins font-medium text-3xl text-neutral-700'>
         Precios
-      </h2>
+      </h3>
       <div className='ss-section-content ss-price-flex flex flex-col w-5/6 sm:my-32 mx-auto sm:bg-white sm:border-t-4 rounded sm:border-primary-600'>
-        <h2 className='hidden sm:block mx-auto py-8 font-poppins font-medium text-2xl sm:text-4xl text-neutral-700'>
+        <h3 className='hidden sm:block mx-auto py-8 font-poppins font-medium text-2xl sm:text-4xl text-neutral-700'>
           Precios
-        </h2>
+        </h3>
         <div className='flex flex-wrap min-w-full flex-1'>
           {precios.map((props, index) => (
             <PriceContent {...props} key={index} index={index} />

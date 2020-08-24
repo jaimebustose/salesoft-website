@@ -10,9 +10,9 @@ export default function PriceContent({ titulo, price, items, action, index }) {
       style={{ minWidth: '16rem', minHeight: '400px' }}
     >
       <div className='ss-price-content flex flex-col items-center h-full'>
-        <h2 className='text-xl text-neutral-700 text-center font-poppins font-medium'>
+        <h3 className='text-xl text-neutral-700 text-center font-poppins font-medium'>
           {titulo}
-        </h2>
+        </h3>
         <span className='text-neutral-300 text-center my-auto font-open'>
           <span className='text-lg text-neutral-900'>{price} </span>CLP
         </span>

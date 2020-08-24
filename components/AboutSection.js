@@ -21,8 +21,8 @@ export default function AboutSection() {
   ];
   return (
     <section className='ss-about min-h-0 xl:min-h-screen mb-10 md:mb-16 xl:mb-8 flex flex-col items-center' style={{ marginTop: '-0.5px'}}>
-      <h2 className='ss-section-content text-center p-0 lg:text-left text-neutral-700 sm:pl-4 text-3xl sm:text-5xl w-full font-poppins pt-16 font-medium lg:text-neutral-300 lg:pl-8'>
-        <span className="lg:text-white">Personas </span>de confianza</h2>
+      <h3 className='ss-section-content text-center p-0 lg:text-left text-neutral-700 sm:pl-4 text-3xl sm:text-5xl w-full font-poppins pt-16 font-medium lg:text-neutral-300 lg:pl-8'>
+        <span className="lg:text-white">Personas </span>de confianza</h3>
       <div className='ss-section-content w-full pt-4 sm:pt-40 xl:pt-64 flex items-end'>
         <LeftPattern className='hidden lg:block ml-16' />
         <div className='flex-1 flex flex-col items-center justify-around sm:flex-row'>

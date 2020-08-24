@@ -10,9 +10,9 @@ export default function SolutionCard({
   return (
     <div className='ss-section-content solution-flex flex flex-col lg:flex-row lg:my-auto my-24 xl:mt-24 items-center justify-center w-full xl:w-5/6 focus:outline-none'>
       <div className='flex-initial w-2/3 lg:text-left order-2 text-center mt-10 lg:mt-0'>
-        <h2 className='font-poppins font-medium text-2xl sm:text-4xl text-neutral-700'>
+        <h3 className='font-poppins font-medium text-2xl sm:text-4xl text-neutral-700'>
           {nombreSolucion}
-        </h2>
+        </h3>
         <p className='font-open text-base sm:text-xl text-neutral-300 my-4 lg:max-w-md'>
           {descripcion}
         </p>
