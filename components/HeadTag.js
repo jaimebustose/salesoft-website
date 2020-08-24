@@ -43,6 +43,7 @@ export default function HeadTag({ title, description }) {
       <meta property='og:image:width' content='400' />
       <meta property='og:image:height' content='400' />
       <meta property='og:description' content={description} />
+      <meta property='theme-color' content='#3994C1' />
       <link
         rel='apple-touch-icon'
         sizes='180x180'
