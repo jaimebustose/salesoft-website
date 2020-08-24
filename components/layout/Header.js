@@ -26,6 +26,7 @@ export default function Header({ isOpen, onHandleIsOpen }) {
       } text-white md:flex select-none md:bg-primary-900 w-full`}
     >
       <h1 className='sr-only'>ScaleSoft - digitaliza tu StartUp y alcanza el siguiente nivel</h1>
+      <p className='sr-only'>En ScaleSoft.cl estamos interesados en entregar herramientas profesionales a empresas en fase de crecimiento</p>
       <div className='flex items-center justify-between px-4 lg:pl-8 py-4'>
         <div>
           <h2 className='font-quick text-2xl md:text-4xl duration-200 cursor-pointer'>
