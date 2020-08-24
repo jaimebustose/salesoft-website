@@ -1,0 +1,6 @@
+Sitemap: https://scalesoft.cl/api/site-map
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*

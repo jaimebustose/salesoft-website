@@ -6,7 +6,7 @@ const contacto = () => (
     <HeadTag
       title={'ScaleSoft | Contacto'}
       description={
-        'ScaleSoft, generación de soluciones tecnológicas y software a medida'
+        'ScaleSoft está enfocado en la generación de soluciones tecnológicas, a partir de la construcción de software a medida para empresas en fase de crecimiento.'
       }
     />
     <ContactForm />

@@ -18,6 +18,7 @@
     "react-hook-form": "^6.4.1",
     "react-messenger-customer-chat": "^0.8.0",
     "react-scroll": "^1.8.1",
+    "sitemap": "^6.2.0",
     "styled-components": "^5.1.1"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
