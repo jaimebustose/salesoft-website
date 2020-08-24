@@ -9,6 +9,7 @@ const privacy = () => (
       description={
         'ScaleSoft está enfocado en la generación de soluciones tecnológicas, a partir de la construcción de software a medida para empresas en fase de crecimiento.'
       }
+      canonical={'https://scalesoft.cl/politica-de-privacidad'}
     />
     <MessengerCustomerChat
       pageId='112750400525941'
